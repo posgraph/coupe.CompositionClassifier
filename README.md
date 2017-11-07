@@ -2,9 +2,9 @@
 This project classifies whether an input image has good or bad composition using a deep learning framework.
 
 ## Introduction ##
-To create our dataset, we first downloaded various quality photos from [Flickr](www.flickr.com) and [DPChallenge](www.dpchallenge.com). We then generated the train dataset with the downloaded images using the [coupe.composition-score-calculator](https://github.com/posgraph/coupe.composition-score-calculator) project. We use the [coupe.composition-score-calculator](https://github.com/posgraph/coupe.composition-score-calculator) project to calculate an input image’s composition score using matlab. Because the project uses matlab, it takes a while to get a composition score. To solve this problem, we use deep learning.  
+To create our dataset, we first downloaded various quality photos from [Flickr](http://www.flickr.com) and [DPChallenge](http://www.dpchallenge.com). We then generated the train dataset with the downloaded images using the [coupe.composition-score-calculator](https://github.com/posgraph/coupe.composition-score-calculator) project. We use the [coupe.composition-score-calculator](https://github.com/posgraph/coupe.composition-score-calculator) project to calculate an input image’s composition score using matlab. Because the project uses matlab, it takes a while to get a composition score. To solve this problem, we use deep learning.  
   
-We use a Residual Network [1](#references) for training the network. Our final model takes 18ms to test an input image.  
+We use a Residual Network [\[1\]](#references) for training the network. Our final model takes 18ms to test an input image.  
 
 |![Bad Composition](docs/images/bad_composition.png) |![Good Composition](docs/images/good_composition.png)|
 |:-------------:|:--------------:|
@@ -28,7 +28,7 @@ th classification_test.lua –net model/baseline-epoch-9.net –dir  <your test_
 * CUDA <= 7.5
 
 ## Neural Network Framework ##
-We use a Residual network [1](#references) as our network structure. The Residual network can get high performance even though it has many layers. Commonly, deep neural networks have higher training error when it is deeper, but Residual networks add new architecture named shortcut connections so it can avoid the gradient vanishing problem.
+We use a Residual network [\[1\]](#references) as our network structure. The Residual network can get high performance even though it has many layers. Commonly, deep neural networks have higher training error when it is deeper, but Residual networks add new architecture named shortcut connections so it can avoid the gradient vanishing problem.
 
 ![Composition Network](docs/images/composition_network.png)
 
