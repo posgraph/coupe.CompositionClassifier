@@ -6,7 +6,7 @@ To create our dataset, we first downloaded various quality photos from [Flickr](
   
 We use a Residual Network [1](#references) for training the network. Our final model takes 18ms to test an input image.  
 
-|![Bad Composition](docs/images/bad_composition.png)|![Good Composition](docs/images/good_composition.png)|
+|![Bad Composition](docs/images/bad_composition.png) |![Good Composition](docs/images/good_composition.png)|
 |:-------------:|:--------------:|
 |Bad Composition|Good Composition|
 
