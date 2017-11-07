@@ -2,7 +2,7 @@
 This project classifies whether an input image has good or bad composition using deep learning framework.
 
 ## Introduction ##
-To create our dataset, we first downloaded various quality photos from [Flickr](www.flickr.com) and [DPChallenge](www.dpchallenge.com). We then generated the train dataset with the downloaded images using the [coupe.composition-score-calculator](https://github.com/posgraph/coupe.composition-score-calculator) project. [coupe.composition-score-calculator](https://github.com/posgraph/coupe.composition-score-calculator) project calculates an input image’s composition score using matlab. Because the project uses matlab, it takes a while to get a composition score. To solve this problem, we use deep learning.  
+To create our dataset, we first downloaded various quality photos from [Flickr](www.flickr.com) and [DPChallenge](www.dpchallenge.com). We then generated the train dataset with the downloaded images using the [coupe.composition-score-calculator](https://github.com/posgraph/coupe.composition-score-calculator) project. The [coupe.composition-score-calculator](https://github.com/posgraph/coupe.composition-score-calculator) project calculates an input image’s composition score using matlab. Because the project uses matlab, it takes a while to get a composition score. To solve this problem, we use deep learning.  
   
 We use a Residual Network [1](#references) for training the network. Our final model takes 18ms to test an input image.  
 
