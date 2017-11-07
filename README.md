@@ -6,7 +6,7 @@ To create our dataset, we first downloaded various quality photos from [Flickr](
   
 We use a Residual Network [1](#references) for training the network. Our final model takes 18ms to test an input image.  
 
-|![Bad Composition](docs/images/bad-composition.png) |![Good Composition](docs/images/bad-composition.png)|
+|![Bad Composition](docs/images/bad_composition.png) |![Good Composition](docs/images/good_composition.png)|
 |:-------------:|:--------------:|
 |Bad Composition|Good Composition|
 
@@ -19,7 +19,7 @@ We use a Residual Network [1](#references) for training the network. Our final m
 ## How to Use ##
 * Test Function Usage  
 ```
-th inference_dir.lua  –net model/repeated-epoch-40.net  –dir <your test_directory_path>
+th classification_test.lua –net model/baseline-epoch-9.net –dir  <your test_directory_path>
 ```
 ## Requirements ##
 * Linux OS
@@ -30,7 +30,7 @@ th inference_dir.lua  –net model/repeated-epoch-40.net  –dir <your test_dire
 ## Neural Network Framework ##
 We use a Residual network [1](#references) as our network structure. The Residual network can get high performance even though it has many layers. Commonly, deep neural networks have higher training error when it is deeper, but Residual networks add new architecture named shortcut connections so it can avoid the gradient vanishing problem.
 
-![Composition Network](docs/images/composition-network.png)
+![Composition Network](docs/images/composition_network.png)
 
 ## License ##
 This software is being made available for research purpose only. Check [LICENSE](LICENSE) file for details.  
