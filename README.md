@@ -6,15 +6,15 @@ To create our dataset, we first downloaded various quality photos from [Flickr](
   
 We use a Residual Network [1](#references) for training the network. Our final model takes 18ms to test an input image.  
 
-|![Bad Composition](docs/images/bad_composition.png) |![Good Composition](docs/images/good_composition.png)|
+|![Bad Composition](docs/images/bad_composition.png)|![Good Composition](docs/images/good_composition.png)|
 |:-------------:|:--------------:|
 |Bad Composition|Good Composition|
 
 ## Files ##
-  * main_lua: Training code
-  * myIterator.lua: Set dataset path and augment dataset
-  * network.lua: design a network architecture
-  * classification_test.lua: Test code
+  * [main.lua](Composition%20Classifier/main.lua): Training code
+  * [myIterator.lua](Composition%20Classifier/myIterator.lua): Set dataset path and augment dataset
+  * [network.lua](Composition%20Classifier/network.lua): design a network architecture
+  * [classification_test.lua](Composition%20Classifier/classification_test.lua): Test code
     
 ## How to Use ##
 * Test Function Usage  
