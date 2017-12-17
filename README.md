@@ -33,7 +33,9 @@ We use a Residual network [\[1\]](#references) as our network structure. The Res
 ![Composition Network](docs/images/composition_network.png)
 
 ## License ##
-This software is being made available for research purpose only. Check [LICENSE](LICENSE) file for details.  
+This software is being made available under the terms in the [LICENSE](LICENSE) file.
+
+Any exemptions to these terms requires a license from the Pohang University of Science and Technology.
 
 ## Contact ##
 Eunbin Hong (hong5827 [at] postech [dot] ac [dot] kr)
